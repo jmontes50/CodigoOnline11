@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mi primero formulario</h1>
+    <img src="" alt="" />
+    <!-- Para crear formulario en html existe la etiqueta FORM -->
+    <!-- action: es el lugar a donde va ir la informacion de mi formulario -->
+    <!-- post: es un tipo de protoco en el cual van viajar mis datos -->
+    <!-- cuando tengamos un formulario que contenga datos sensibles este debe tener
+    el nmethod="post" y en caso no method="get" -->`
+    <form action="" method="post">
+      <!-- Para poder ponerle un titulo a mi formulario debo utilizar 
+      FIELDSET y LEGEND -->
+      <fieldset>
+        <legend>Titutlo de mi formulario</legend>
+        <!-- Hagamos un formulario de Iniciar Session -->
+        <!-- correo, password y un boton para enviar los datos -->
+        <!-- La equita que se usa para poder crear cajas es INPUT -->
+        <!--
+          Una propieda de los inputs son los placeholder
+          Ademas los input tambiene tienen tipos:
+            email - number - date - time - color - text - password
+        -->
+        <input name="correo" placeholder="Ingrese un correo" type="email" />
+        <!-- Existe una etiqueta llamada BR: Nos un salto de line -->
+        <br />
+        <br />
+        <input
+          name="password"
+          placeholder="Ingrese una contraseña"
+          type="password"
+        />
+        <!-- Para hacer existen varias formar por ejemplo si quiero
+        boton que se encargue de enviar los datos este boton debe ser
+        de tipo * submit * -->
+        <!-- Hay una etiqueta llamada button -->
+        <button type="submit">Iniciar Sessión</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
