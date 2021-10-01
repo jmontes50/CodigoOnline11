@@ -1,4 +1,4 @@
-# Input Radio y Checkbox
+# Formulario
 
 ## Radio (Radio Button)
 - Usamos radio cuando tenemos un conjunto de opciones y solo queremos que el usuario escoja 1
@@ -14,3 +14,13 @@
 
 ## checked
 - Permite que mi checkbox o radio esten marcados por defecto
+
+## readonly vs disabled
+
+### readonly
+- Se usa cuando queremos hacer que un input no sea editable, pero queremos mantener su valor al momento de enviar la informacion
+
+### disabled
+- Se usa cuando queremos hacer que un input no sea editable, pero esto no conserva el valor
+
+* Porque al momento de enviar la informacion, sabemos que enviamos el valor de cada input, pero si el input tienen la proiedad *disabled* este valor sera nulo, sin embargo si usad *readonly* el valor sera enviado

@@ -52,7 +52,7 @@
     <form>
       <fieldset>
         <legend>Ingresa todos tus datos</legend>
-        <!-- Quiero 
+        <!-- Quiero
         Nombre
         Apellido
         Fecha de nacimiento
@@ -63,13 +63,17 @@
         Si esta de acuerdo con los terminos y condiciones 
         plan de suscripción-->
         <!-- label: Es un texto que acompaña a nuestro input -->
+        <!-- Value: Permite poner un valor por defecto -->
         <label for="nombre">Nombre</label>
         <input
           autofocus
+          autocomplete="new-password"
+          readonly
           id="nombre"
           name="nombre"
           type="text"
           placeholder="Ingrese su nombre"
+          value="Linder"
         />
         <br />
         <br />
@@ -83,7 +87,18 @@
         <br />
         <br />
         <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-        <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+        <!-- Nuestro input date tiene la opcion de poner 
+        min -> Fecha minima Y-M-D (1900-01-91)
+        max -> Fecha maxima Y-M-D (2021-12-31)
+        -->
+        <input
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+          min="2000-01-01"
+          max="2022-12-01"
+          value="2021-09-30"
+          type="date"
+        />
         <br />
         <br />
         <label for="correo">Correo</label>
