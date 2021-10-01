@@ -56,10 +56,12 @@
         Nombre
         Apellido
         Fecha de nacimiento
+        Correo
         Password
         Celular
         Pais
-        Si esta de acuerdo con los terminos y condiciones -->
+        Si esta de acuerdo con los terminos y condiciones 
+        plan de suscripción-->
         <!-- label: Es un texto que acompaña a nuestro input -->
         <label for="nombre">Nombre</label>
         <input
@@ -81,6 +83,79 @@
         <br />
         <label for="fecha_nacimiento">Fecha de Nacimiento</label>
         <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+        <br />
+        <br />
+        <label for="correo">Correo</label>
+        <input
+          id="correo"
+          name="correo"
+          placeholder="Ingrese un correo"
+          required
+          type="email"
+        />
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          placeholder="Ingrese un password"
+          required
+          type="password"
+        />
+        <br />
+        <br />
+        <label for="celular">Celular</label>
+        <!-- cuando pongo input de tipo number unicamente me abre del 0 al 9 -->
+        <!-- cuando pongo input de tipo tel este contiene las teclas del 0 al 9 "+" "*" -->
+        <input
+          id="celular"
+          name="celular"
+          maxlength="9"
+          placeholder="Ingrese su celular"
+          type="number"
+          4
+        />
+        <!-- Cuando uno quiere buscar su pais se despliega una lista -->
+        <!-- Una lista lista desplegable se llama select -->
+        <!-- y los elementos de este select se llaman option -->
+        <br />
+        <br />
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+          <option value="" disabled selected>Seleccione un pais</option>
+          <option value="Peru">Peru (+51)</option>
+          <option value="Chile">Chile (+53)</option>
+          <option value="Colombia">Colombia (+56)</option>
+          <option value="Alemania">Alemania (+3)</option>
+          <option value="Argentina">Argentina (+58)</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Ecuador">Ecuador</option>
+        </select>
+        <br />
+        <br />
+        <label for="terminos">
+          <!-- cuando input sea de tipo checkbox o radiobutton este
+          input se recomienda ponerlo dentro de label -->
+          <input id="terminos" name="terminos" required type="checkbox" />
+          Acepta los terminos y condiciones?
+        </label>
+        <br /><br />
+        <label for="suscription_1">
+          <input id="suscription_1" name="suscription" type="radio" />
+          Suscription 1
+        </label>
+        <label for="suscription_2">
+          <input checked id="suscription_2" name="suscription" type="radio" />
+          Suscription 2
+        </label>
+        <label for="suscription_3">
+          <input id="suscription_3" name="suscription" type="radio" />
+          Suscription 3
+        </label>
+        <br />
+        <br />
+        <button type="submit">Registrarse</button>
       </fieldset>
     </form>
   </body>
