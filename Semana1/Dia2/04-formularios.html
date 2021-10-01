@@ -65,6 +65,7 @@
         <!-- label: Es un texto que acompaña a nuestro input -->
         <label for="nombre">Nombre</label>
         <input
+          autofocus
           id="nombre"
           name="nombre"
           type="text"
@@ -155,6 +156,18 @@
         </label>
         <br />
         <br />
+        <!-- agremos un textarea: es un input es cual me permite poner muchos text -->
+        <label for="texto"></label>
+        <textarea
+          id="texto"
+          name="texto"
+          placeholder="Ingrese un texto sobre usted"
+          rows="10"
+          cols="50"
+          maxlength="140"
+          minlength="30"
+        ></textarea>
+        <br /><br />
         <button type="submit">Registrarse</button>
       </fieldset>
     </form>
