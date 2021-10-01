@@ -8,7 +8,6 @@
   </head>
   <body>
     <h1>Mi primero formulario</h1>
-    <img src="" alt="" />
     <!-- Para crear formulario en html existe la etiqueta FORM -->
     <!-- action: es el lugar a donde va ir la informacion de mi formulario -->
     <!-- post: es un tipo de protoco en el cual van viajar mis datos -->
@@ -18,7 +17,7 @@
       <!-- Para poder ponerle un titulo a mi formulario debo utilizar 
       FIELDSET y LEGEND -->
       <fieldset>
-        <legend>Titutlo de mi formulario</legend>
+        <legend>Iniciar Sesión</legend>
         <!-- Hagamos un formulario de Iniciar Session -->
         <!-- correo, password y un boton para enviar los datos -->
         <!-- La equita que se usa para poder crear cajas es INPUT -->
@@ -27,13 +26,19 @@
           Ademas los input tambiene tienen tipos:
             email - number - date - time - color - text - password
         -->
-        <input name="correo" placeholder="Ingrese un correo" type="email" />
+        <input
+          name="correo"
+          placeholder="Ingrese un correo"
+          required
+          type="email"
+        />
         <!-- Existe una etiqueta llamada BR: Nos un salto de line -->
         <br />
         <br />
         <input
           name="password"
           placeholder="Ingrese una contraseña"
+          required
           type="password"
         />
         <!-- Para hacer existen varias formar por ejemplo si quiero
@@ -41,6 +46,41 @@
         de tipo * submit * -->
         <!-- Hay una etiqueta llamada button -->
         <button type="submit">Iniciar Sessión</button>
+      </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+    <form>
+      <fieldset>
+        <legend>Ingresa todos tus datos</legend>
+        <!-- Quiero 
+        Nombre
+        Apellido
+        Fecha de nacimiento
+        Password
+        Celular
+        Pais
+        Si esta de acuerdo con los terminos y condiciones -->
+        <!-- label: Es un texto que acompaña a nuestro input -->
+        <label for="nombre">Nombre</label>
+        <input
+          id="nombre"
+          name="nombre"
+          type="text"
+          placeholder="Ingrese su nombre"
+        />
+        <br />
+        <br />
+        <label for="apellido">Apellido</label>
+        <input
+          id="apellido"
+          name="apellido"
+          type="text"
+          placeholder="Ingrese su apellido"
+        />
+        <br />
+        <br />
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+        <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
       </fieldset>
     </form>
   </body>
