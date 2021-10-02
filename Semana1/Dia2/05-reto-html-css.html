@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=de vice-width, initial-scale=1.0" />
     <!-- La forma de conectar mi archivo css junto con mi html es con la 
     etiqueta link => en href debe estar la ruta de mi css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,800&display=swap" rel="stylesheet">
+    <!-- Es css va luego de importar las fuentes -->
     <link rel="stylesheet" href="./css/estilos.css" />
     <title>RETO DE FRONTEND MENTOR</title>
   </head>
@@ -24,7 +28,7 @@
             voluptatibus aperiam commodi.
           </p>
         </div>
-        <div>
+        <div class="contenedor-detalle">
           <img src="./img/musica.svg" alt="" />
           <h5>Annual Plan</h5>
           <p>$59.99/Year</p>
@@ -32,7 +36,7 @@
         </div>
         <div>
           <button id="boton-pagar">Porceed to payment</button>
-          <button>Cancelar order</button>
+          <button class="boton-cancelar">Cancel order</button>
         </div>
       </div>
     </div>

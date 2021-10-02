@@ -1,9 +1,14 @@
 /* La famila font tiene que ver con todo lo referente a texto */
 /* Vamos a cambiar el fondo del body con la propiedad background */
 body {
-  font-family: Helvetica;
+  font-family: "Red Hat Display", sans-serif;
   background: url("../img/fondo.svg") no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* virtual height */
+  height: 100vh;
 }
 
 .contenedor {
@@ -17,7 +22,8 @@ body {
 
 .contenedor-texto {
   /* padding: basicament nos genera un espacio desde adentro hacie afuera */
-  padding: 12px;
+  padding: 30px;
+  text-align: center;
 }
 
 .imagen-fondo {
@@ -36,6 +42,59 @@ body {
   cursor: pointer;
   /* shadow */
   box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /* * Chrome - Safari - Android - iOS */
   -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /* * Firefox */
   -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /* * Opera */
+  -o-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /* * Internet explorer */
+  -ms-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+}
+
+.boton-cancelar {
+  /* existe algo llamando margin
+    margin: arriba - abajo - izquierda - derecha
+    margin-top: arriba
+    margin-botton: abjo
+    margin-left: izquierda
+    margin-right: derecha
+   */
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  /* El peso del texto vas de 100 - 900 y ademas tiene bold */
+  font-weight: 900;
+}
+
+.contenedor-detalle {
+  display: flex;
+  /* ordernar los elementos de manera vertical
+  este puede recibir 3 tipo de alineacion
+  1) flex-start
+  2) center
+  3) flex-end */
+  align-items: center;
+  /* justify-content: es la forma de alinear mis elementos
+  de manera horizontal
+  1) flex-start
+  2) center
+  3) space-between
+  4) space-around
+  5) space-evenly
+  6) flex-end*/
+  justify-content: space-between;
+  background-color: rgba(56, 42, 225, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* para acceder a un elemento hijo siemplemento debo poner su tipo de selector */
+.contenedor-detalle a {
+  text-decoration: none;
+  /* el atributo para cambiar el tamano del texto es font-size */
+  font-size: 12px;
 }
